@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "O Senhor dos Anéis: A Sociedade do Anel";
+}
+<br />
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/SenhorDosAneis.png" alt="O Senhor dos Anéis: A Sociedade do Anel">
+            <h2>O Senhor dos Anéis: A Sociedade do Anel</h2>
+            <h3 class="h3Books">J. R. R. Tolkien</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                A imaginação prodigiosa de J.R.R. Tolkien e seu conhecimento profundo das antigas mitologias da Europa permitiram que
+                ele criasse um universo tão complexo e convincente quanto o mundo real.
+            </h5>
+            <p class="pBooks">
+                A Sociedade do Anel começa no Condado, a região rural do oeste da Terra-média onde vivem os diminutos e pacatos hobbits.
+                Bilbo Bolseiro, um dos raros aventureiros desse povo, cujas peripécias foram contadas em O Hobbit, resolve ir embora do
+                Condado e deixa sua considerável herança nas mãos de seu jovem parente Frodo.
+                <br>
+                O mais importante legado de Bilbo é o anel mágico que costumava usar para se tornar invisível. No entanto, o mago Gandalf,
+                companheiro de aventuras do velho hobbit, revela a Frodo que o objeto é o Um Anel, a raiz do poder demoníaco de Sauron,
+                o Senhor Sombrio, que deseja escravizar todos os povos da Terra-média. A única maneira de eliminar a ameaça de Sauron é
+                destruir o Um Anel nas entranhas da própria montanha de fogo onde foi forjado.
+                <br>
+                A revelação faz com que Frodo e seus companheiros hobbits Sam, Merry e Pippin deixem a segurança do Condado e iniciem uma
+                perigosa jornada rumo ao leste. Ao lado de representantes dos outros Povos Livres que resistem ao Senhor Sombrio, eles
+                formam a Sociedade do Anel.
+                <br>
+                Alguém uma vez disse que o mundo dos leitores de língua inglesa se divide entre os que já leram O Senhor dos Anéis e os
+                que um dia lerão o livro. Com esta nova tradução da obra, o fascínio dessa aventura atemporal ficará ainda mais evidente
+                para os leitores brasileiros, tanto os que já conhecem a saga como os que estão prestes a descobrir seu encanto.
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

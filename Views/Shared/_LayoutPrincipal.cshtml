@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Agenda</title>
+    <link rel="stylesheet" href="~/css/principal.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <!--Menu hamburguer-->
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <a asp-controller="Main" asp-action="Main"><li class="pular">Inicio</li></a>
+                    <a asp-controller="Livros" asp-action="Dashboard"><li>Dashboard</li></a>
+                    <a asp-controller="Main" asp-action="SobreNos"><li>Sobre nós</li></a>
+                    <a asp-controller="Main" asp-action="Biblioteca"><li>Bibliotecas de SP</li></a>
+                    <a asp-controller="Usuario" asp-action="AlterarCadastro"><li>Alterar Cadastro</li></a>
+                </ul>
+            </div>
+            <div class="sessao">
+                <form asp-controller="Usuario" asp-action="Logout" method="post" class="sessao">
+                    <p class="user">Bem Vindo(a), user &nbsp; 
+                    <button type="submit" name="btn" value="btnsair" class="btnBye">Sair</button></p>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

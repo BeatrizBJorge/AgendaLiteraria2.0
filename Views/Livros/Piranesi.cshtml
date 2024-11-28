@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Piranesi";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/Piranesi.png" alt="Piranesi">
+            <h2>Piranesi</h2>
+            <h3 class="h3Books">Susanna Clarke</h>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Em uma realidade onírica, magia e razão estão intrinsicamente ligadas nesta obra que se entranha por tênues
+                labirintos místicos e extraordinários.
+            </h5>
+            <p class="pBooks">
+                Piranesi vive na Casa. Talvez, sempre tenha vivido.
+                <br>
+                Em seus diários, dia após dia, ele registra de maneira clara e cuidadosa todas as maravilhas que encontra:
+                o labirinto de salões, as milhares de estátuas, as marés que invadem as escadarias, as nuvens que se movem em uma
+                procissão lenta pelos cômodos de cima. Habitualmente, encontra-se com o Outro, sua única companhia e com quem divide
+                as pesquisas e explorações. Às vezes, Piranesi também leva oferendas aos mortos, mas, na maior parte do tempo, está só.
+                <br>
+                De repente, mensagens começam a surgir no chão, rabiscadas a giz. Há alguém novo na Casa. Mas quem é essa pessoa
+                e o que ela quer? É amigável ou traz consigo destruição e loucura, como diz o Outro?
+                <br>
+                Textos perdidos têm de ser encontrados. Segredos esquecidos precisam ser revelados. O mundo que Piranesi pensava
+                conhecer está se tornando obscuro e perigoso.
+                <br>
+                <em> A Beleza da Casa é imensurável; sua Bondade, infinita. </em>
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

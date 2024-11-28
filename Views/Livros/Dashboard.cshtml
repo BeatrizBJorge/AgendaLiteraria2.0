@@ -1,0 +1,100 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Dashboard";
+}
+<br />
+@* &#x1F4D6; *@
+<div class="central">
+
+<h3>Dashboard</h3>
+<br>
+<form asp-action="DeletarDaLista" method="post">
+    <div class="dashboard">
+        <div class="dash">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5m8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+            </svg>
+            <h4>🕮 Já Li </h4>
+            <div class="lidos">
+                <ul>
+                    @if (ViewBag.ListaJaLi == null || ViewBag.ListaJaLi.Count == 0)
+                    {
+                        <br /><br />
+                        <h2>Lista Vazia</h2>
+                    }
+                    else
+                    {
+                        foreach (var livro in ViewBag.ListaJaLi)
+                        {
+                            <li>
+                                <img src="~/@livro.Capa" alt="@livro.Nome" />
+                                <p>@livro.Nome - @livro.Autor</p>
+                                <button class="btnDel" name="btn" value="delJaLi-@livro.Action">&#10060;</button>
+                            </li>
+                        }
+                    }
+                    </ul>
+            </div>
+        </div>
+
+        <div class="dash">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-star-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5M8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.18.18 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.18.18 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.18.18 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.18.18 0 0 1-.134-.098z" />
+            </svg>
+            <h4>🕮 Estou Lendo</h4>
+            <div class="lendo">
+                <ul>
+                    @if (ViewBag.ListaEstouLendo == null || ViewBag.ListaEstouLendo.Count == 0)
+                    {
+                        <br /><br />
+                        <h2>Lista Vazia</h2>
+                    }
+                    else
+                    {
+                        foreach (var livro in ViewBag.ListaEstouLendo)
+                        {
+                            <li>
+                                <img src="~/@livro.Capa" alt="@livro.Nome" />
+                                <p>@livro.Nome - @livro.Autor</p>
+                                <button class="btnDel" name="btn" value="delEstouLendo-@livro.Action">&#10060;</button>
+                            </li>
+                        }    
+                    }
+                </ul>
+            </div>
+        </div>
+
+        <div class="dash">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
+            </svg>
+            <h4>🕮 Quero Ler</h4>
+            <div class="listaDesejo">
+                <ul>
+                    @if (ViewBag.ListaQueroLer == null || ViewBag.ListaQueroLer.Count == 0)
+                    {
+                        <br /><br />
+                        <h2>Lista Vazia</h2>
+                    }
+                    else
+                    {
+                        foreach (var livro in ViewBag.ListaQueroLer)
+                        {
+                            <li>
+                                <img src="~/@livro.Capa" alt="@livro.Nome" />
+                                <p>@livro.Nome - @livro.Autor</p>
+                                <button class="btnDel" name="btn" value="delQueroLer-@livro.Action">&#10060;</button>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    </form>
+<br>
+@*         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="../mainPage/mainpage.html" class="back">Voltar</a> *@
+<br>
+<br>
+</div>

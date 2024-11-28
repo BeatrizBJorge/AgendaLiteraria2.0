@@ -1,0 +1,46 @@
+﻿@model List<Agenda_Lieraria2._0.Models.LivrosModel>
+@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Inicio";
+}
+
+<!--Pagina após o login, pesquisa de catalogo-->
+<br>
+<div class="central">
+
+    <h3>Bem vindo!</h3>
+    <h4 class="h4">Faça sua pesquisa com o nome do livro ou autor!</h4>
+    <h4 class="h4">Para procurar os livros que são disponibilizados gratuitamente na Amazon, pesquise <i>gratuito</i> </h4>
+    <form method="post" asp-controller="Main" asp-action="Main">
+        <div class="box">
+            <div class="searchWrapper">
+                <input type="text"
+                       name="searchTerm"
+                       id="searchBar"
+                       placeholder="Pesquise seu Livro" />
+                <button type="submit" class="btnpesquisa">Pesquisar</button>
+            </div>
+            <br><br>
+        <ul id="booksList">
+            @foreach (var livro in Model)
+            {
+                <li class="Livros">
+                    <img b-u5i94nszd0="" src="~/@livro.Capa" alt="@livro.Nome" />
+                    <h4>@livro.Nome</h4>
+                    <p>@livro.Autor</p>
+                    <a class="alog" asp-controller="@livro.Controller" asp-action="@livro.Action">Saiba Mais</a>
+                    <h5 hidden>@livro.Filtro</h5>
+                </li>
+            }
+        </ul>
+
+        </div>
+    </form>
+
+</div>
+<br>
+@*         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *@
+@* <a asp-controller="Home" asp-action="Index" class="back">Voltar</a> *@
+
+<br>
+<br>

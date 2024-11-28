@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Minha Vida Fora Dos Trilhos";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/MinhaVidaForaDosTrilhos.png" alt="Minha Vida Fora dos Trilhos">
+            <h2>Minha Vida Fora Dos Trilhos</h2>
+            <h3 class="h3Books">Claire Vanderpool</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Embarque no Trem:
+            </h5>
+            <p class="pBooks">
+                A protagonista de MINHA VIDA FORA DOS TRILHOS, Abilene Tucker, tem apenas 12 anos, mas é corajosa e impetuosa
+                o suficiente para encontrar aventuras na pequena cidade de Manifest, Kansas, um fim de mundo para onde seu pai a
+                enviou de trem a fim de passar o verão sob a tutela de um velho conhecido enquanto ele trabalha em uma ferrovia.
+                <br>
+                O que parecia ser o período mais solitário e entediante de sua vida ganha um novo e surpreendente rumo quando
+                Abilene encontra uma velha caixa de charutos com cartas antigas e pequenas lembranças de outros tempos. Aos olhos
+                curiosos da menina, a caixa se torna uma verdadeira arca do tesouro, onde segredos enterrados conectam dois momentos
+                da cidade. A partir de então, o livro se divide em duas narrativas cronológicas: passado e presente se misturam,
+                daquela maneira mágica que só um bom livro consegue contar.
+                <br>
+                Os acontecimentos vão da época da Primeira Guerra Mundial à Grande Depressão norte- americana dos anos 1930,
+                com soberba fidelidade histórica que ajudam a construir esta narrativa de perda e redenção.
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

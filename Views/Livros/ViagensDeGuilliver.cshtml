@@ -1,0 +1,85 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "As Viagens de Gulliever";
+}
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/ViagensDeGulliver.jpg" alt="As Viagens de Gulliever">
+            <h2>As Viagens de Gulliever</h2>
+            <h3 class="h3Books">Jonathan Swift</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Obra mais famosa de Jonathan Swift, Viagens de Gulliver é um genial tratado de filosofia política.
+            </h5>
+            <p class="pBooks">
+                Em suas viagens, o personagem conhece diferentes regimes políticos e os analisa profundamente. 
+                Tudo isso é feito "com a pena da galhofa" e é exatamente essa capacidade que tornou Gulliver um 
+                personagem polêmico e um sucesso imediato.
+                <br>
+                Em Viagens de Gulliver, Swift dispara sua fúria satírica contra a ciência, a sociedade, 
+                a economia, o comércio e a política de seu tempo. Até mesmo a decisão de escrever em formato 
+                de relato de viagem é uma resposta sarcástica ao sucesso que a obra Robinson Crusoé conquistava 
+                na época em que Swift começou a produzir o texto.
+                <br>
+                Tudo em Gulliver é polêmico, inclusive o fato de um livro que foi descrito por 
+                Thackeray (1811-1863) como "imundo em palavras, imundo em pensamentos, furioso, 
+                violento e obsceno" ter se tornado ao longo do tempo uma história de caráter infantil.
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="link-books">
+            <p class="link-title">
+                Este livro está disponível gratuitamente na Amazon:
+                <a class="link-amazon" target="_blank"
+                   href="https://www.amazon.com.br/As-viagens-Gulliver-Jonathan-Swift-ebook/dp/B09GPTQ8YK/ref=sr_1_40?dib=eyJ2IjoiMSJ9.bEBYLEPt-Ysu-Xy64gTpQx4hTzqNKnf_kWM9PmeFwl0l3mMuFKTEf9FQl31IqGHGd7HcedaWOLlT1bdrZFbKCukE4fvwzSrj2EjO5K6fwgZvXyJcf_5SlDZSd8vcO_Y1EoE1H01CTafNnTcyNMlKu8t2RJg1UdbyBNikmgC9hNvUVaPatKJ9LBNIz7uo6mtkKgCOtr3oZ68OzGB2FNtUWKRpnZZCtM2XiYDt59LSotI.VJEevm1dOzF4ZesWNS4ogbTy17Qz2NmTjJ6SD1ZhEWQ&dib_tag=se&qid=1729611488&s=digital-text&sr=1-40">
+                    Clique aqui!
+                </a>
+            </p>
+        </div>
+        <br />
+        <div class="tabela-bib">
+            <table>
+                <tr>
+                    <th>Nome da Biblioteca</th>
+                    <th>Endereço</th>
+                </tr>
+                <tr>
+                    <td>Mario de Andrade</td>
+                    <td>R. da Concolação, 94 - República, São Paulo - SP</td>
+                </tr>
+                <tr>
+                    <td>Adelpha Figueiredo</td>
+                    <td>São Paulo - SP</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+</div>

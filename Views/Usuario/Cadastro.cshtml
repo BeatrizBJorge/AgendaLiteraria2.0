@@ -1,0 +1,87 @@
+﻿@model UsuarioModel
+@{
+    Layout = "_LayoutUsuario";
+    ViewData["Title"] = "Cadastro";
+}
+<a asp-controller="Home" asp-action="Index" class="back">&#8592;</a>
+<div class="cadastro">
+
+    <form asp-controller="Usuario" asp-action="Cadastrar" method="post" class="cadastroForm">
+        <fieldset class="cadFieldset">
+            <legend class="cadLegend">Cadastro</legend>
+
+            <p>Preencha o Formulário e faça seu Cadastro!</p>
+
+            <div class="row">
+                <div class="col">
+                    <label for="" class="cadLabel">
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                        Nome completo: <br>
+                        <input type="text" class="cadInput" placeholder="Digite seu Nome" asp-for="Nome" >
+                    </label>
+                </div>
+                <div class="col">
+                    <label for="" class="cadLabel">
+                        <span asp-validation-for="Datanasc" class="text-danger"></span>
+                        Data de nascimento: <br>
+                        <input type="date" class="cadInput" asp-for="Datanasc" >
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="" class="cadLabel">
+                        <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+                        Nome de usuário: <br>
+                        <input type="text" class="cadInput" placeholder="Digite um nome de usuario" asp-for="NomeUsuario">
+                    </label>
+                </div>
+                <div class="col">
+                    <label for="" class="cadLabel">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                        Endereço de e-mail: <br>
+                        <input type="email" class="cadInput" placeholder="Digite seu email" asp-for="Email">
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="" class="cadLabel">
+                        <span asp-validation-for="Senha" class="text-danger"></span>
+                        Senha: <br>
+                        <input type="password" name="password" class="cadInput" placeholder="Digite sua senha" asp-for="Senha">
+                   
+                    </label>
+                </div>
+                <div class="col">
+                    <label for="" class="cadLabel">
+                        Confirme sua Senha: <br>
+                        <input type="password" class="cadInput" placeholder="Confirme sua senha" asp-for="Senha" > 
+
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    Você aceita nossos termos?<br>
+                    <label class="checkbox-container">
+                        Aceito os termos
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button class="btncad" type="submit" name="btnCad">Enviar</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+</div>

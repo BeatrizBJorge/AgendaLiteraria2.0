@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Cinco Mulheres";
+}
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/CincoMulheres.jpg" alt="cinco mulheres">
+            <h2>Cinco Mulheres</h2>
+            <h3 class="h3Books">Machado de Assis</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+            </h5>
+            <p class="pBooks">
+                Desenhei-as rapidamente, conforme apareciam, sem intenção de precedência, nem cuidado de escolha.
+                <br>
+                Cada uma delas forma um esboço à parte; mas todas podem ser examinadas entre o charuto e o café.
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="link-books">
+            <p class="link-title">
+                Este livro está disponível gratuitamente na Amazon:
+                <a class="link-amazon" target="_blank"
+                   href="https://www.amazon.com.br/Cinco-Mulheres-Machado-Assis-ebook/dp/B00AGB2826/ref=sr_1_30?dib=eyJ2IjoiMSJ9.aO0wwGlmBdQVMleVcprZepi-mH4gcyannUNvI0_39AbauEyMtoxb7xCYKzyni9wq_PNHW0N9ggsZVmNberrmceWIplEnytI5z2QP2vtgeopzMaFOI8T9kuvdEE0RlIj5hjEOMfY5JzfAxA4rSw7CXQclXpeoPtU4dD0cmM4ap1omDI7y2sC182B0SVX2lalvH0BG0VTe6Hdn6QiLxye1F0TETzYCwmEndXQeh09FF_g.RWE3zIZHynV-qPnKbDH6J-3wLVd8AjS2gABGU8CNqrw&dib_tag=se&qid=1729610497&s=digital-text&sr=1-30">
+                    Clique aqui!
+                </a>
+            </p>
+        </div>
+        <br />
+        <div class="tabela-bib">
+            <table>
+                <tr>
+                    <th>Nome da Biblioteca</th>
+                    <th>Endereço</th>
+                </tr>
+                <tr>
+                    <td>Mario de Andrade</td>
+                    <td>R. da Concolação, 94 - República, São Paulo - SP</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+</div>

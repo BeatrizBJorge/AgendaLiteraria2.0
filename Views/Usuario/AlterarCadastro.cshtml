@@ -1,0 +1,43 @@
+﻿@model UsuarioModel
+@{ 
+    Layout = "_LayoutUsuario";
+    ViewData["Title"] = "Alterar Cadastro";
+}
+
+<a asp-controller="Main" asp-action="Main" class="back">&#8592;</a>
+<div class="altCad">
+
+    <form asp-controller="Usuario" asp-action="AlterarCadastro" method="post" class="altForm">
+        <fieldset class="altCadFieldset">
+            <legend class="altCadLegend">Informações de Cadastro</legend>
+
+            <p class="altCadP">Preencha o Formulário para <strong><em>Alterar</em></strong> seu Cadastro!</p>
+            <p class="altCadP">Caso não deseje alterar o email, basta colocar o email já cadastrado!</p>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <label for="" class="altLabel">
+                        <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+                        Novo nome de usuário: <br>
+                        <input type="text" id="username" placeholder="Digite um nome de usuario" class="altInput" asp-for="NomeUsuario">
+                    </label>
+                </div>
+                <div class="col">
+                    <label for="" class="altLabel">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                        Novo Endereço de e-mail: <br>
+                        <input type="email" id="email" placeholder="Digite seu email" class="altInput" asp-for="Email">
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button class="btnaltCad">Enviar</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+</div>

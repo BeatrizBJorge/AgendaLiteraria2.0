@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Ilusão do Tempo";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/IlusaoDoTempo.png" alt="A Ilusão do Tempo">
+            <h2>A Ilusão do Tempo </h2>
+            <h3 class="h3Books">Andri Snaer Magnason</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Não é possível consquistar o mundo, sem conquistar o tempo.
+            </h5>
+            <p class="pBooks">
+                Quando as coisas não vão nada bem e os economistas preveem uma enorme crise financeira, a família
+                de Vitória ― assim como o resto do mundo ― decide se esconder em suas misteriosas caixas pretas à espera de tempos melhores.
+                No entanto, após vários anos, a caixa de Vitória se abre e a menina se vê em uma cidade em ruínas. Sem rumo, ela caminha
+                por prédios e ruas tomadas por florestas e animais selvagens, até chegar à uma casa onde crianças se reúnem em torno de
+                uma senhora para ouvir a história de um rei ganancioso que conquistou o mundo, mas desejava conquistar o tempo.
+                <br>
+                Para poupar sua bela princesa dos dias escuros e sombrios, normais ou sem valor, ele a coloca em uma caixa mágica
+                transparente como cristal, mas feita de uma seda de teia de aranha tão densa que o próprio tempo não consegue penetrar.
+                Vitória aos poucos percebe uma conexão entre sua própria história e a do reino mágico.
+                Junto com seus novos amigos, ela precisa encontrar uma forma de consertar o mundo antes que seja tarde demais.
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</div>

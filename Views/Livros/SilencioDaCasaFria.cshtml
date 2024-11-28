@@ -1,0 +1,58 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "O Silêncio da Casa Fria";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/SilencioDaCasaFria.png" alt="O Silêncio da Casa Fria">
+            <h2>O Silêncio da Casa Fria</h2>
+            <h3 class="h3Books">Laura Purcell</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Algumas portas devem permanecer trancadas.
+
+            </h5>
+            <p class="pBooks">
+                Quando Elsie perdeu o marido apenas algumas semanas após o casamento, achou que já tinha sofrido o suficiente para uma
+                vida inteira. Praticamente sozinha em uma casa enorme e isolada, ela jamais imaginou que os companheiros silenciosos &ndash;
+                painéis de madeira que imitavam pessoas em atividades cotidianas  &ndash;, um dia, seguiriam seus movimentos com os
+                olhinhos pintados. Muito menos que eles apareceriam por conta própria em cômodos aleatórios…
+                <br>
+                Com a atmosfera lúgubre típica das histórias de fantasma vitorianas, O Silêncio da Casa Fria honra os
+                melhores contos góticos. A história de uma mulher confrontada com um medo irracional, que coloca em xeque sua própria
+                sanidade. Estaria Elsie vendo coisas como forma de dar sentido ao luto? Ou realmente havia algo sobrenatural morando sob
+                o mesmo teto que ela?
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

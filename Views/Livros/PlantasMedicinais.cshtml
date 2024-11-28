@@ -1,0 +1,67 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Plantas Medicinais";
+}
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/PlantasMedicinais.jpg" alt="plantas medicinais">
+            <h2>Plantas Medicinais</h2>
+            <h3 class="h3Books">Maria Zélia de Almeida</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+            </h5>
+            <p class="pBooks">
+                Plantas Medicinais colabora com a preservação e multiplicação das informações obtidas em trabalhos 
+                comunitários acerca do uso de plantas para fins medicinais, com o devido respeito às tradições 
+                da herança cultural africana na medicina do Brasil.
+                <br>
+                As indicações terapêuticas tradicionais indicam plantas para fins medicinais que extrapolam em 
+                muito a terapêutica convencional, assumindo, em determinados momentos, um caráter místico, 
+                embasado em crenças culturais inerentes ao grupo étnico.
+                <br />
+                A visão do homem, como ser integral, respeitado em seu momento de fragilidade, quando algum 
+                mal de origem psíquica ou somática lhe aflige, destaca-se como a principal ótica para o 
+                entendimento deste trabalho.
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="link-books">
+            <p class="link-title">
+                Este livro está disponível gratuitamente na Amazon:
+                <a class="link-amazon" target="_blank"
+                   href="https://www.amazon.com.br/Plantas-Medicinais-Mara-Z%C3%A9lia-Almeida-ebook/dp/B01A5VXJLU/ref=sr_1_31?dib=eyJ2IjoiMSJ9.aO0wwGlmBdQVMleVcprZepi-mH4gcyannUNvI0_39AbauEyMtoxb7xCYKzyni9wq_PNHW0N9ggsZVmNberrmceWIplEnytI5z2QP2vtgeopzMaFOI8T9kuvdEE0RlIj5hjEOMfY5JzfAxA4rSw7CXQclXpeoPtU4dD0cmM4ap1omDI7y2sC182B0SVX2lalvH0BG0VTe6Hdn6QiLxye1F0TETzYCwmEndXQeh09FF_g.RWE3zIZHynV-qPnKbDH6J-3wLVd8AjS2gABGU8CNqrw&dib_tag=se&qid=1729610497&s=digital-text&sr=1-31">
+                    Clique aqui!
+                </a>
+            </p>
+        </div>
+       
+
+    </div>
+
+
+</div>

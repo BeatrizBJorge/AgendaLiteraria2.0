@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Em Algum Lugar nas Estrelhas";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/EmAlgumLugarNasEstrelas.png" alt="Em algum lugar nas estrelas">
+            <h2>Em Algum Lugar nas Estrelas</h2>
+            <h3 class="h3Books">Clare Vanderpool</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Um romance intenso sobre a difícil arte de crescer em um mundo <br>
+                que nem sempre parece satisfeito com a nossa presença. <br>
+                Pelo menos é desse jeito que as coisas têm acontecido para Jack Baker.
+            </h5>
+            <p class="pBooks">
+                A Segunda Guerra Mundial estava no fim, mas ele não tinha motivos para comemorar. Sua mãe morreu e seu pai...
+                bem, seu pai nunca demonstrou se preocupar muito com o filho. Jack é então levado para um internato no Maine
+                (o mesmo estado onde vivem Stephen King e boa parte de seus personagens).
+                <br>
+                O colégio militar, o oceano que ele nunca tinha visto, a indiferença dos outros alunos: tudo aquilo faz Jack se sentir pequeno.
+                Até ele conhecer o enigmático Early Auden. Early, um nome que poderia ser traduzido como precoce, é uma descrição muito adequada para
+                um prodígio como ele, que decifra casas decimais do número Pi como se lesse uma odisseia.
+                <br>
+                Mas, por trás de sua genialidade, há uma enorme dificuldade de se relacionar com o mundo e de lidar com seus sentimentos e
+                com as pessoas ao seu redor.Obsessivo, Early Auden tem regras específicas sobre que músicas deve ouvir em
+                cada dia da semana: Louis Armstrong às segundas; Sinatra às quartas; Glenn Miller às sextas; Mozart aos domingos e Billie Holiday
+                sempre que estiver chovendo.
+                <br>
+                Seu comportamento é um dos muitos indícios da síndrome de Asperger, uma forma branda de autismo que só
+                seria descoberta muito tempo depois da Segunda Guerra, e que inspirou personagens já clássicos como o Sr. Spock (Star Trek),
+                o Dr. House e Sheldon Cooper (The Big Bang Theory).Quando chegam as festas de fim de ano, a escola fica vazia.
+                Todos os alunos voltam para casa, para celebrar com suas famílias.
+                Todos, menos Jack e Early. <br>
+                Os dois aproveitam a solidão involuntária e partem em uma jornada ao encontro do lendário Urso Apalache.
+                Nessa grande aventura, vão encontrar piratas, seres fantásticos e até, quem sabe, uma maneira de trazer os mortos de volta &ndash; ainda
+                que talvez do que Jack mais precise seja aprender a deixá-los em paz.
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

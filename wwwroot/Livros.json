@@ -1,0 +1,299 @@
+[
+  {
+    "id": 1,
+    "nome": "A Pequena Lagarta",
+    "autor": "Flávio Colombini",
+    "capa": "imagens/APequenaLagarta.jpg",
+    "filtro": "gratuito",
+    "controller": "Livros",
+    "action": "APequenaLagarta"
+  },
+  {
+    "id": 2,
+    "nome": "A Casa no Mar Cerúleo",
+    "autor": "T. J. Klune",
+    "capa": "imagens/ACasaNoMarCeruleo.PNG",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "ACasaNoMarCeruleo"
+  },
+  {
+    "id": 3,
+    "nome": "Além da Porta Sussurrante",
+    "autor": "T. J. Klune",
+    "capa": "imagens/AlemDaPortaSussurrante.PNG",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "AlemDaPortaSussurrante"
+  },
+  {
+    "id": 4,
+    "nome": "O Mar sem Estrelas",
+    "autor": "Erin Morgenstern",
+    "capa": "imagens/OMarSemEstrelas.PNG",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "OMarSemEstrelas"
+  },
+  {
+    "id": 5,
+    "nome": "O Circo da Noite",
+    "autor": "T. J. Klune",
+    "capa": "imagens/OCircoDaNoite.PNG",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "OCircoDaNoite"
+  },
+  {
+    "id": 6,
+    "nome": "Em Algum Lugar nas Estrelas",
+    "autor": "Clare Vanderpool",
+    "capa": "imagens/EmAlgumLugarNasEstrelas.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "EmAlgumLugarNasEstrelas"
+  },
+  {
+    "id": 7,
+    "nome": "Minha Vida Fora dos Trilhos",
+    "autor": "Clare Vanderpool",
+    "capa": "imagens/MinhaVidaForaDosTrilhos.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "MinhaVidaForaDosTrilhos"
+  },
+  {
+    "id": 8,
+    "nome": "Coraline",
+    "autor": "Neil Gaiman",
+    "capa": "imagens/Coraline.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "Coraline"
+  },
+  {
+    "id": 9,
+    "nome": "Leve-me com Você",
+    "autor": "Catherine Ryan Hyde",
+    "capa": "imagens/LeveMeComVoce.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "LeveMeComVoce"
+  },
+  {
+    "id": 10,
+    "nome": "A Longa Viagem a um Pequeno Planeta Hostil",
+    "autor": "Becky Chambers",
+    "capa": "imagens/ALongaViagem.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "AViagemPlanetaHostil"
+  },
+  {
+    "id": 11,
+    "nome": "Eragon",
+    "autor": "Christopher Paolini",
+    "capa": "imagens/Eragon.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "Eragon"
+  },
+  {
+    "id": 12,
+    "nome": "Eldest",
+    "autor": "Christopher Paolini",
+    "capa": "imagens/Eldest.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "Eldest"
+  },
+  {
+    "id": 13,
+    "nome": "O Hobbit",
+    "autor": "J. R. R. Tolkien",
+    "capa": "imagens/OHobbit.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "Hobbit"
+  },
+  {
+    "id": 14,
+    "nome": "O Senhor dos Anéis: A Sociedade do Anel",
+    "autor": "J. R. R. Tolkien",
+    "capa": "imagens/SenhorDosAneis.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "SenhorDosAneis_SociedadeAnel"
+  },
+  {
+    "id": 15,
+    "nome": "O Jardim Secreto",
+    "autor": "Frances Hodgson Burnett",
+    "capa": "imagens/JardimSecreto.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "JardimSecreto"
+  },
+  {
+    "id": 16,
+    "nome": "A Guerra que Salvou Minha Vida",
+    "autor": "Kimberly Brubaker Bradley",
+    "capa": "imagens/GuerraQueSalvouMinhaVida.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "GuerraQueSalvouMinhaVida"
+  },
+  {
+    "id": 17,
+    "nome": "O Sol Também é uma Estrela",
+    "autor": "Nicola Yoon",
+    "capa": "imagens/OSolTambemEUmaEstrela.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "SolTambemEUmaEstrela"
+  },
+  {
+    "id": 18,
+    "nome": "Os Dois Morrem no Final",
+    "autor": "Adam Silvera",
+    "capa": "imagens/OsDoisMorremNoFinal.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "OsDoisMorremNoFinal"
+  },
+  {
+    "id": 19,
+    "nome": "O Primeiro a Morrer no Final",
+    "autor": "Adam Silvera",
+    "capa": "imagens/OPrimeiroAMorrerNoFinal.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "PrimeiroAMorrerNoFinal"
+  },
+  {
+    "id": 20,
+    "nome": "Toda Luz que Não Podemos Ver",
+    "autor": "Anthony Doerr",
+    "capa": "imagens/TodaLuzQueNaoPodemosVer.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "TodaLuzQueNaoPodemosVer"
+  },
+  {
+    "id": 21,
+    "nome": "O Silêncio da Casa Fria",
+    "autor": "Laura Purcell",
+    "capa": "imagens/SilencioDaCasaFria.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "SilencioDaCasaFria"
+  },
+  {
+    "id": 22,
+    "nome": "A Vida Invisível de Addie LaRue",
+    "autor": "V. E. Schwab",
+    "capa": "imagens/VidaInvisivelAddieLaRue.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "VidaInvisivelAddieLaRue"
+  },
+  {
+    "id": 23,
+    "nome": "Vilão",
+    "autor": "V. E. Schwab",
+    "capa": "imagens/Vilao.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "Vilao"
+  },
+  {
+    "id": 24,
+    "nome": "O Lar da Srta. Peregrine para Crianças Peculiares",
+    "autor": "Ransom Riggs",
+    "capa": "imagens/CriancasPeculiares.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "CriancasPeculiares"
+  },
+  {
+    "id": 25,
+    "nome": "A Ilusão do Tempo",
+    "autor": "Andri Snaer Magnason",
+    "capa": "imagens/IlusaoDoTempo.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "IlusaoDoTempo"
+  },
+  {
+    "id": 26,
+    "nome": "Piranesi",
+    "autor": "Susanna Clarke",
+    "capa": "imagens/Piranesi.png",
+    "filtro": "0",
+    "controller": "Livros",
+    "action": "Piranesi"
+  },
+  {
+    "id": 27,
+    "nome": "Cinco Mulheres",
+    "autor": "Machado de Assis",
+    "capa": "imagens/CincoMulheres.jpg",
+    "filtro": "gratuito",
+    "controller": "Livros",
+    "action": "CincoMulheres"
+  },
+  {
+    "id": 28,
+    "nome": "O Amanhã não está à Venda",
+    "autor": "Ailton Krenak",
+    "capa": "imagens/OAmanhaNaoEstaVenda.jpg",
+    "filtro": "gratuito",
+    "controller": "Livros",
+    "action": "OAmanhaNaoEstaVenda"
+  },
+  {
+    "id": 29,
+    "nome": "Os Miseráveis",
+    "autor": "Aljâhiz",
+    "capa": "imagens/OsMiseraveis.jpg",
+    "filtro": "gratuito",
+    "controller": "Livros",
+    "action": "OsMiseraveis"
+  },
+  {
+    "id": 30,
+    "nome": "Plantas Medicinais",
+    "autor": "Maria Zélia de Almeida",
+    "capa": "imagens/PlantasMedicinais.jpg",
+    "filtro": "gratuito",
+    "controller": "Livros",
+    "action": "PlantasMedicinais"
+  },
+  {
+    "id": 31,
+    "nome": "Psicologia Social e Pessoalidade",
+    "autor": "Mary Jane P. Spink",
+    "capa": "imagens/PsicologiaSocial.jpg",
+    "filtro": "gratuito",
+    "controller": "Livros",
+    "action": "PsicologiaSocial"
+  },
+  {
+    "id": 32,
+    "nome": "Sempre foi Você (A agência)",
+    "autor": "Elizabeth Grey",
+    "capa": "imagens/SempreFoiVoce.jpg",
+    "filtro": "gratuito",
+    "controller": "Livros",
+    "action": "SempreFoiVoce"
+  },
+  {
+    "id": 33,
+    "nome": "As Viagens de Gulliever",
+    "autor": "Jonathan Swift",
+    "capa": "imagens/ViagensDeGulliver.jpg",
+    "filtro": "gratuito",
+    "controller": "Livros",
+    "action": "ViagensDeGuilliver"
+  }
+]

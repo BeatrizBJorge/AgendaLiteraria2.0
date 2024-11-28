@@ -1,0 +1,385 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Tilt Neon", sans-serif;
+    background-color: #FFEEF4;
+    line-height: 1.5;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Página Login */
+.login {
+    background-image: linear-gradient(rgba(218, 74, 194, 0.5), rgba(255, 255, 0, 0.5));
+    padding: 200px 40px;
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+.loginForm { /* form de login */
+    background-color: #ffcbdb;
+    color: black;
+    padding: 40px 10px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.loginFieldset { /* fieldset do form de login */
+    border: none;
+}
+
+.loginLegend { /* legend do form de login */
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.loginLabel {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    display: block;
+}
+
+.loginInput {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.btnlog {
+    background-color: rgba(218, 74, 194, 0.5);
+    color: #005C49;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 70px;
+}
+.btntroca {
+    background-color: rgba(218, 74, 194, 0.5);
+    color: #005C49;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Página Cadastro */
+
+.cadastro {
+    background-image: url(../image/grey-and-pink-bookshelf.jpeg);
+    padding: 120px 50px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.cadastroForm {
+    background-color: #ffcbdb;
+    color: black;
+    padding: 50px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cadFieldset {
+    border: none;
+}
+
+.cadLegend {
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 15px;
+    text-align: center;
+    color: #005C49;
+}
+
+.cadLabel {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    display: block;
+}
+
+p {
+    font-size: 20px;
+}
+
+.cadInput {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.btncad {
+    background-color: #005C49;
+    color: #FFEEF4;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.col {
+    flex-basis: 45%;
+}
+/* Estilizando o container do checkbox */
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    /* Estilizando o checkbox em si */
+    .checkbox-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+/* Estilizando o visual do checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffeef4; /*#eee*/
+    border-radius: 5px;
+}
+/* Mudança de cor do checkbox quando marcado */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #94A684; /*#2196f3*/
+}
+/* Estilizando o sinal de visto (checkmark) dentro do checkbox */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Estilizando o sinal de visto (checkmark) */
+.checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.col > .senha {
+    position: relative;
+}
+
+
+/* Alterar Cadastro */
+.altForm {
+    background-image: linear-gradient(#ffcbdb, #aec3ae);
+    /*background-color: #fce2eb;*/ /*mudar essa cor*/
+    color: black;
+    padding: 50px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.altCadFieldset {
+    border: none;
+}
+
+.altCadLegend {
+    font-weight: bolder;
+    font-size: 40px;
+    color: #AEC3AE;
+}
+
+.altLabel {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    display: block;
+}
+
+.altCadP {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.altInput {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.btnaltCad {
+    background-color: #FFCBDB;
+    color: #005C49;
+    border: none;
+    padding: 10px 235px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.cadastro {
+    padding: 80px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.col {
+    flex-basis: 45%;
+}
+
+.back {
+    /*background-color: #94A684;*/
+    text-decoration: none;
+    color: #000;
+    font-size: 55px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* Mensagens de Alertas */
+span {
+    color: #d70808;
+    background-color: #f19393;
+    border-color: #f5c2c7;
+    max-width: 50%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+span.field-validation-error {
+    display: inline-block; /* Exibir quando houver erro */
+}
+
+/*Media Queries*/
+@media (max-width: 768px) {
+    .login, 
+    .cadastro {
+        padding: 20px 10px;
+        width: 100%;
+        margin: 0;
+        border-radius: 5px;
+    }
+
+    .loginForm,
+    .cadastroForm,
+    .altForm {
+        padding: 20px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .loginLegend,
+    .cadLegend,
+    .altCadLegend {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .loginLabel,
+    .cadLabel,
+    .altLabel,
+    .altCadP,
+    p {
+        font-size: 16px;
+    }
+
+    .loginInput,
+    .cadInput,
+    .altInput {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btnlog,
+    .btntroca,
+    .btncad,
+    .btnaltCad {
+        padding: 10px;
+        font-size: 14px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .checkbox-container {
+        font-size: 14px;
+    }
+
+    .back {
+        font-size: 30px;
+        margin-left: 5px;
+    }
+}

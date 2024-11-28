@@ -1,0 +1,93 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Os Miseráveis";
+}
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/OsMiseraveis.jpg" alt="os miseráveis">
+            <h2>Os Miseráveis</h2>
+            <h3 class="h3Books">Aljâhiz</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                A literatura árabe é múltipla e riquíssima. O texto Albukhalâ' (Os miseráveis), <br />
+                de Aljâhiz (776-869), é parte relevante dessa imensa produção cultural.
+            </h5>
+            <p class="pBooks">
+                Um dos maiores expoentes da prosa em árabe de todos os tempos, Aljâhiz, nesse texto, 
+                nos oferece uma das primeiras obras de ficção do mundo islâmico.
+                <br>
+                Nela, o autor ridiculariza certos comportamentos e indica a generosidade como uma das 
+                principais virtudes da mentalidade muçulmana. Além do objetivo social claro de satirizar a 
+                miséria e a mesquinharia de indivíduos e grupos, o texto amplifica nossa compreensão da cultura 
+                e das condutas reverenciadas pela sociedade árabe medieval.
+                <br>
+                Aljâhiz é um autor com aguçado poder de observação. Sua prosa possui um ceticismo alegre, 
+                um senso cômico e um olhar satírico que permitem conhecer melhor a psicologia de sua época. 
+                Além de erudito, carrega o prazer pela controvérsia, âmbito no qual o autor, em seu total 
+                domínio de um estilo claro e conciso, apresenta importantes traços do pensamento da sociedade de 
+                seu tempo.
+                <br>
+                Os miseráveis é uma janela para a cultura islâmica medieval. Em razão da inegável qualidade e 
+                da influência que ela exerceu sobre outros pensadores muçulmanos como Al-Farabi (872-950) 
+                e Ibn Khaldun (1332-1406), a tradução da obra de Aljâhiz amplia os limites da cultura em 
+                língua portuguesa ao oferecer um universo que até então era inatingível à imensa maioria dos 
+                leitores brasileiros.
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="link-books">
+            <p class="link-title">
+                Este livro está disponível gratuitamente na Amazon:
+                <a class="link-amazon" target="_blank"
+                href="https://www.amazon.com.br/Os-Miser%C3%A1veis-Alj%C3%A2hiz-ebook/dp/B09GPV5SCZ/ref=sr_1_50?dib=eyJ2IjoiMSJ9.soJpc2cVgEdLgxL9VXw1eLRntx67uDPKCbPdaV3o8t39ImzuuosbBG6NAF1dEHenUtPWQLmMutOMIcT9D6R99yZqVIYvrxUsSX832aIAc9VNv4lDWmpoDZW70Cd4Jmv3cW2xCtBM2Lo2hi7fV70aIOxljm8voa3mmWSwiLFtDKb5d6SAAjL6zEEPEScY8aSoPaH_-Xk_G6VjprXA7zVcUJsMyRyrMZ7xp5hdjKJJPfI.IA24LED9OYSypnRST2gBndy9uFumom8H96thvN5PBFw&dib_tag=se&qid=1729611786&s=digital-text&sr=1-50">
+                Clique aqui!
+            </a>
+            </p>
+        </div>
+        <br />
+        <div class="tabela-bib">
+            <table>
+                <tr>
+                    <th>Nome da Biblioteca</th>
+                    <th>Endereço</th>
+                </tr>
+                <tr>
+                    <td>Mario de Andrade</td>
+                    <td>R. da Concolação, 94 - República, São Paulo - SP</td>
+                </tr>
+                <tr>
+                    <td>Afonso Schmidt</td>
+                    <td>Av. Elísio Teixeira Leite, 1470 - Vila Cruz das Almas, São Paulo - SP</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+</div>

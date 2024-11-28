@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "O Mar sem Estrelhas";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/OMarSemEstrelas.PNG" alt="O Mar sem Estrelas">
+            <h2>O Mar sem Estrelas</h2>
+            <h3 class="h3Books">Erin Morgenstern</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Da autora best-seller de O Circo da Noite, uma história de amor atemporal se desdobra em um mundo secreto debaixo da
+                terra ― um lugar de piratas, pintores e navios que navegam sobre um Mar Sem Estrelas
+            </h5>
+            <p class="pBooks">
+                Quando Zachary Ezra Rawlins descobre um misterioso livro escondido na biblioteca de sua universidade, isso o leva a uma busca como nenhuma outra.
+                Em meio a suas inebriantes narrativas sobre prisioneiros apaixonados e cidades perdidas, ele se depara com algo impossível:
+                uma história de sua própria infância.
+                <br>
+                Determinado a obter respostas que este livro sem título ou autor se recusa a prover, Zachary deve seguir as únicas pistas que
+                encontra na capa &ndash; uma abelha, uma chave e uma espada. Em seu caminho, surgem duas pessoas que mudarão o curso de sua vida:
+                Mirabel, uma impetuosa pintora de cabelos cor-de-rosa, e Dorian, um belo e enigmático homem descalço.
+                <br>
+                Navegando por bailes de máscaras e sociedades secretas, este é só o início de uma missão que o levará a um estranho labirinto subterrâneo,
+                às margens do Mar Sem Estrelas. Um mundo maravilhoso de túneis sinuosos, cidades perdidas, amantes eternos e histórias a serem preservadas,
+                custe o que custar…
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

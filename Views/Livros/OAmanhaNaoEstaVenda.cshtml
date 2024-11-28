@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "O Amanhã não está à venda";
+}
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/OAmanhaNaoEstaVenda.jpg" alt="O Amanhã não está à venda">
+            <h2>O Amanhã não está à venda</h2>
+            <h3 class="h3Books">Ailton Krenak</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                As reflexões de um dos nossos maiores pensadores indígenas sobre a pandemia que parou o mundo.
+            </h5>
+            <p class="pBooks">
+                Há vários séculos que os povos indígenas do Brasil enfrentam bravamente ameaças que podem levá-los 
+                à aniquilação total e, diante de condições extremamente adversas, reinventam seu cotidiano e 
+                suas comunidades. Quando a pandemia da Covid-19 obriga o mundo a reconsiderar seu estilo de vida, 
+                o pensamento de Ailton Krenak emerge com lucidez e pertinência ainda mais impactantes.
+                <br>
+                Em páginas de impressionante força e beleza, Krenak questiona a ideia de "volta à normalidade", 
+                uma "normalidade" em que a humanidade quer se divorciar da natureza, devastar o planeta e cavar 
+                um fosso gigantesco de desigualdade entre povos e sociedades. Depois da terrível experiência pela 
+                qual o mundo está passando, será preciso trabalhar para que haja mudanças profundas e 
+                significativas no modo como vivemos.
+                <br>
+                Tem muita gente que suspendeu projetos e atividades. As pessoas acham que basta mudar o calendário. 
+                Quem está apenas adiando compromisso, como se tudo fosse voltar ao normal, está vivendo no passado […]. 
+                Temos de parar de ser convencidos. Não sabemos se estaremos vivos amanhã. Temos de parar de vender o amanhã.
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="link-books">
+            <p class="link-title">
+                Este livro está disponível gratuitamente na Amazon:
+                <a class="link-amazon" target="_blank"
+                   href="https://www.amazon.com.br/amanh%C3%A3-n%C3%A3o-est%C3%A1-%C3%A0-venda-ebook/dp/B0876HG28P/ref=lp_6311441011_1_4?pf_rd_p=721161a6-b78b-47dc-9717-91545f5eca72&pf_rd_r=EFKSHTQ73H5ZBNQ1PA0S&sbo=QS21L9be7oZFAGyl4IXR%2Bw%3D%3D">
+                    Clique aqui!
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,62 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Toda Luz que não Podemos Ver";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/TodaLuzQueNaoPodemosVer.png" alt="Toda Luz que não Podemos Ver">
+            <h2>Toda Luz que não Podemos Ver</h2>
+            <h3 class="h3Books">Anthony Doerr</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Um romance sobre autopreservação e generosidade em meio às atrocidades de uma guerra que jamais deve ser esquecida.
+            </h5>
+            <p class="pBooks">
+                Marie-Laure vive em Paris, perto do Museu de História Natural, onde seu pai é o chaveiro responsável por cuidar de
+                milhares de fechaduras. Quando a menina fica cega, aos seis anos, o pai constrói uma maquete em miniatura do bairro onde
+                moram para que ela seja capaz de memorizar os caminhos. Na ocupação nazista em Paris, pai e filha fogem para a cidade
+                de Saint-Malo e levam consigo o que talvez seja o mais valioso tesouro do museu.
+                <br>
+                Em uma região de minas na Alemanha, o órfão Werner cresce com a irmã mais nova, encantado pelo rádio que certo dia
+                encontram em uma pilha de lixo. Com a prática, acaba se tornando especialista no aparelho, talento que lhe vale uma vaga
+                em uma escola nazista e, logo depois, uma missão especial: descobrir a fonte das transmissões de rádio responsáveis pela
+                chegada dos Aliados na Normandia. Cada vez mais consciente dos custos humanos de seu trabalho, o rapaz é enviado então
+                para Saint-Malo, onde seu caminho cruza o de Marie-Laure, enquanto ambos tentam sobreviver à Segunda Guerra Mundial.
+                <br>
+                Uma história arrebatadora contada de forma fascinante. Com incrível habilidade para combinar lirismo e uma observação
+                atenta dos horrores da guerra, o premiado autor Anthony Doerr constrói, em Toda luz que não podemos ver, um tocante
+                romance sobre o que há além do mundo visível.
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

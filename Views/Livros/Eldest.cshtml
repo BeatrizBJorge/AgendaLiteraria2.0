@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Eldest";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/Eldest.png" alt="Eldest">
+            <h2>Eldest</h2>
+            <h3 class="h3Books">Christopher Paolini</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Cai a escuridão...
+                Colidem as espadas...
+                Reina o mal.
+            </h5>
+            <p class="pBooks">
+                Eragon e seu dragão, Saphira, acabaram de salvar um estado rebelde da destruição planejada pelas forças poderosas do
+                rei Galbatorix, cruel governante do Império. Eragon rumará agora para Ellesméra, terra dos elfos, para aprimorar seu
+                treinamento em magia e nas artes da espada, habilidades vitais para um Cavaleiro de Dragão.
+                É a jornada de uma vida, cheia de lugares e pessoas diferentes, dignas de admiração e reverência, em cada dia uma nova aventura.
+                Mas o caos e a traição o importunam a cada instante e Eragon não sabe em quem deve confiar.
+                <br>
+                Enquanto isso, seu primo Roran se envolve numa nova batalha em Carvahall &ndash; vilarejo onde nasceu e cresceu &ndash;,
+                batalha que coloca Eragon num perigo ainda maior.
+                <br>
+                Será que a mão negra do rei sufocará toda e qualquer resistência? Eragon pode até não escapar com vida...
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

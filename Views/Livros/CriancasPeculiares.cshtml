@@ -1,0 +1,61 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "O Lar da Srta. Perefrine para Crianças Peculiares";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/CriancasPeculiares.png" alt="O Lar da Srta. Perefrine para Crianças Peculiares">
+            <h2>O Lar da Srta. Perefrine para Crianças Peculiares</h2>
+            <h3 class="h3Books">Ransom Riggs</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Jacob Portman cresceu ouvindo as histórias fantásticas que o avô Abe contava.
+            </h5>
+            <p class="pBooks">
+                Na época da Segunda Guerra Mundial, o avô havia morado numa ilha remota, num casarão que funcionava como abrigo para
+                crianças. Lá, Abe convivera com uma menina que levitava, uma garota que produzia fogo com as mãos, um menino invisível…
+                Entretanto, todas essas histórias foram perdendo o encanto à medida que Jacob crescia. Até que, aos dezesseis anos,
+                tudo volta à tona para se provar real.
+                <br>
+                Abalado com a morte misteriosa do avô, Jacob decide ir à tal ilha para tentar entender as últimas palavras de Abe:
+                “Encontre a ave. Na fenda. Do outro lado do túmulo do velho.” Ele encontra o casarão em ruínas, mas, ao passar por um
+                túnel subterrâneo, ele se vê em outra época, décadas atrás: em 3 setembro de 1940. Naquele lugar protegido no tempo, ele
+                conhece crianças com habilidades peculiares e encontra as respostas para todas as suas perguntas. Mas o fascínio inicial
+                logo se transforma em uma luta pela sobrevivência e para salvar a vida de seus novos amigos.
+                <br>
+                Viagens no tempo, mulheres que se transformam em aves, crianças com dons inusitados e monstros à espreita. Bem-vindo ao
+                lar da srta. Peregrine para crianças peculiares, um fascinante mundo novo pronto para ser descoberto.
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

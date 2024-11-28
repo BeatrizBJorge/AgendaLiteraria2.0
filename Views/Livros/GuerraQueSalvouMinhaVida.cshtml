@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "A Guerra que Salvou a Minha Vida";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/GuerraQueSalvouMinhaVida.png" alt="A Guerra que Salvou a Minha Vida">
+            <h2>A Guerra que Salvou a Minha Vida</h2>
+            <h3 class="h3Books">Kimberly Brubaker Bradley</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Quando a guerra começa dentro de casa
+            </h5>
+            <p class="pBooks">
+                Ada tem dez anos (ao menos é o que ela acha). A menina nunca saiu de casa, para não envergonhar a mãe na frente dos outros.
+                Da janela, vê o irmão brincar, correr, pular &ndash; coisas que qualquer criança sabe fazer. Qualquer criança que não tenha
+                nascido com um “pé torto” como o seu. Trancada num apartamento, Ada cuida da casa e do irmão sozinha, além de ter que
+                escapar dos maus-tratos diários que sofre da mãe. Ainda bem que há uma guerra se aproximando.
+                <br>
+                Os possíveis bombardeios de Hitler são a oportunidade perfeita para Ada e o caçula Jamie deixarem Londres e partirem para o
+                interior, em busca de uma vida melhor.
+                <br>
+                Kimberly Brubaker Bradley consegue ir muito além do que se convencionou chamar “história de superação”.
+                Seu livro é um registro emocional e historicamente preciso sobre a Segunda Guerra Mundial. E de como os grandes conflitos
+                armados afetam a vida de milhões de inocentes, mesmo longe dos campos de batalha. No caso da pequena Ada, a guerra começou
+                dentro de casa.
+                <br>
+                Essa é uma das belas surpresas do livro: mostrar a guerra pelos olhos de uma menina, e não pelo ponto de vista de um
+                soldado, que enfrenta a fome e a necessidade de abandonar seu lar. Assim como a protagonista, milhares de crianças precisaram
+                deixar a família em Londres na esperança de escapar dos horrores dos bombardeios.
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

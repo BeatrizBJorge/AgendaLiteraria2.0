@@ -1,0 +1,58 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Leve-me com você";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/LeveMeComVoce.png" alt="Leve-me com Você">
+            <h2>Leve-me Com Você</h2>
+            <h3 class="h3Books">Catherine Ryan Hyde</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Esqueça todas as histórias que você já leu sobre as férias de verão. <br> Troque as praias paradisíacas pelos tons terrosos das reservas naturais americanas,
+                as cadeiras e protetores solares por um trailer e um pacote de marshmallows, e abra bem os olhos para observar as estrelas com August, Seth e Henry,
+                o trio improvável e inesquecível de LEVE-ME COM VOCÊ.
+            </h5>
+            <p class="pBooks">
+                August Shroeder é um professor de ciências desacreditado e um alcoólatra em recuperação. Todos os anos, seu destino nas férias de verão é o mesmo: a estrada.
+                Em seu trailer, ele percorre quilômetros e mais quilômetros nas rodovias para visitar os belíssimos parques e reservas naturais. Seu plano era visitar o Parque
+                Nacional Yellowstone com seu filho, Phillip, mas agora não há ninguém no banco do passageiro &ndash; apenas um punhado de cinzas guardado no porta-luvas,
+                em uma garrafa de chá carregada de significado.
+                <br>
+                Quando o trailer quebra, August busca conserto na oficina mais próxima. Mas, além do motor home pronto para seguir viagem, ele sai de lá com dois garotos
+                a tiracolo &ndash; seus novos companheiros nessa road trip &ndash; e a chance de repaginar uma viagem que tinha tudo para ser melancólica e permeada por
+                lembranças doloridas.
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,63 @@
+﻿@model LivrosModel
+@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "A casa no mar ceruleo";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img b-u5i94nszd0="" src="~/imagens/ACasaNoMarCeruleo.PNG" alt="A Casa no Mar Ceruléo"> 
+            @*<img b-u5i94nszd0="" src="@Url.Content("~/imagens/ACasaNoMarCeruleo.PNG")" alt="A Casa no Mar Ceruléo">  *@
+
+            <h2>A Casa No Mar Ceruleo</h2>
+            <h3 class="h3Books">T. J. Klune</h3>
+            
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>Uma ilha mágica. Uma tarefa perigosa. Um segredo em chamas.</h5>
+            <p class="pBooks">
+                Linus Baker leva uma vida sossegada e solitária.
+                Aos quarenta anos, ele vive em uma casa minúscula com uma gata malandra e seus velhos discos.
+                No trabalho, é responsável por supervisionar orfanatos do governo.
+                <br>
+                Porém, tudo muda quando Linus é convocado para cumprir uma tarefa notável e altamente confidencial:
+                visitar o Orfanato de Marsyas, onde moram seis crianças extraordinárias:
+                uma gnoma, uma sprite, uma serpe, uma bolha verde não identificável, um canisomem e o Anticristo.
+                Sua missão é determinar se essas criaturas são ou não capazes de trazer o fim dos tempos.
+                <br>
+                O responsável pelas crianças é o enigmático Arthur Parnassus,
+                disposto a fazer qualquer coisa para manter seus órfãos em segurança e,
+                à medida que Linus e Arthur se aproximam, segredos há muito guardados vêm à tona.
+                Então, resta a Linus tomar uma decisão irrevogável: destruir um lar ou assistir ao mundo sucumbir.
+                <br>
+                Contada com maestria, A casa no mar cerúleo é uma história encantadora sobre a profunda experiência de descobrir
+                uma família improvável em um lugar inesperado ― e de lutar por ela como se fosse sua.
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash"  name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</div>

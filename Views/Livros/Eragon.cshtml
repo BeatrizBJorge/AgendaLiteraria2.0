@@ -1,0 +1,59 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Eragon";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img b-u5i94nszd0="" src="~/imagens/Eragon.png" alt="Eragon">
+            <h2>Eragon</h2>
+            <h3 class="h3Books">Christopher Paolini</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                O vento uiva pela noite trazendo consigo um aroma capaz de mudar o mundo.
+            </h5>
+            <p class="pBooks">
+                Quando Eragon encontra na floresta uma pedra azul polida, acredita que poderá ser uma descoberta de sorte para um simples
+                rapaz do campo: talvez sirva para comprar carne que alimentará a família durante o inverno.
+                Mas, no momento em que um dragão nasce de dentro da pedra, Eragon percebe que está diante de um legado quase tão antigo
+                quanto o do próprio Império. Da noite para o dia, de uma vida pacata, ele é lançado para um arriscado novo mundo movido pelas
+                tramas do destino, da magia e do poder. Empunhando uma espada lendária e seguindo as sábias palavras de um velho contador
+                de histórias, Eragon e o leal dragão terão de se aventurar por terras perigosas e enfrentar inimigos sombrios em um Império
+                governado por um rei cuja maldade não conhece fronteiras.
+                <br>
+                Ao jovem Eragon foi dada a responsabilidade de alcançar a glória dos lendários heróis da Ordem dos Cavaleiros de Dragão.
+                Será que conseguirá vencer os obstáculos que o destino lhe reservou? Agora as suas escolhas poderão
+                salvar &ndash; ou destruir &ndash; o mundo em que vive.
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

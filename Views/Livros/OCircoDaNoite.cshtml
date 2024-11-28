@@ -1,0 +1,77 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "O Circo da Noite";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/OCircoDaNoite.PNG" alt="O Circo da Noite">
+            <h2>O Circo da Noite</h2>
+            <h3 class="h3Books">Erin Morgenstern</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                O circo chega sem aviso...
+            </h5>
+            <p class="pBooks">
+                Simplesmente está lá, quando ontem não estava. <br>
+                Contra o céu cinza pairam tendas colossais listradas de preto e branco. <br>
+                Um aviso pendurado acima dos portões diz:
+                <br><br>
+                <strong>
+                    Abre ao cair da noite
+                    <br>
+                    Fecha ao amanhecer
+                </strong>
+                <br><br>
+                Quando os últimos raios de sol desaparecem do céu, <br>
+                pequenas luzes começam a tremular em meio às tendas, <br>
+                como se todo o circo estivesse coberto de vaga-lumes. <br>
+                Quando as tendas estão todas iluminadas, brilhando contra o céu noturno, a placa se revela:
+                <br><br>
+                <strong>
+                    Le Cirque des Rêves
+                    <br>
+                    O Circo dos Sonhos
+                </strong>
+                <br><br>
+                Os portões de ferro estremecem e se abrem,
+                como se por vontade própria. <br>
+                Abrindo-se para fora, convidam a multidão para dentro.
+                <br><br>
+                <strong>
+                    Agora o circo está aberto.
+                    <br>
+                    Agora você pode entrar.
+                </strong>
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

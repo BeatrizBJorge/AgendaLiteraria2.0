@@ -1,0 +1,56 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Coraline";
+}
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/Coraline.png" alt="Coraline">
+            <h2>Coraline</h2>
+            <h3 class="h3Books">Neil Gaiman</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Repleta de elementos ao mesmo tempo sombrios e lúdicos, a história conquistou crianças e adultos em todo o mundo
+            </h5>
+            <p class="pBooks">
+                Certas portas não devem ser abertas. E Coraline descobre isso pouco tempo depois de chegar com os pais à sua nova casa,
+                um apartamento em um casarão antigo ocupado por vizinhos excêntricos e envolto por uma névoa insistente, um mundo de
+                estranhezas e magia, o tipo de universo que apenas Neil Gaiman pode criar.
+                <br>
+                Ao abrir uma porta misteriosa na sala de casa, a menina se depara com um lugar macabro e fascinante.
+                Ali, naquele outro mundo, seus outros pais são criaturas muito pálidas, com botões negros no lugar dos olhos,
+                sempre dispostos a lhe dar atenção, fazer suas comidas preferidas e mostrar os brinquedos mais divertidos.
+                Coraline enfim se sente... em casa. Mas essa sensação logo desaparece, quando ela descobre que o lugar guarda
+                mistérios e perigos, e a menina se dá conta de que voltar para sua verdadeira casa vai ser muito mais difícil &ndash; e
+                assustador &ndash; do que imaginava.
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

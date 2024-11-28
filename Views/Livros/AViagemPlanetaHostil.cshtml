@@ -1,0 +1,69 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "A Longa Viagem A Um Pequeno Planeta Hostil";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/ALongaViagem.png" alt="A Longa Viagem A Um Pequeno Planeta Hostil">
+            <h2>A Longa Viagem A Um Pequeno Planeta Hostil</h2>
+            <h3 class="h3Books">Becky Chambers</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Você nem imagina os mistérios que existem do outro lado do Universo. <br>
+                Se tiver coragem de desbravá-los, é melhor se preparar. <br>
+                Esta não será uma jornada rápida e os perigos podem surgir a cada momento, de onde menos se espera.
+            </h5>
+            <p class="pBooks">
+                O livro de Becky Chambers é um marco recente no universo da ficção científica. Lançado originalmente através de
+                financiamento coletivo pela plataforma Kickstarter, ele conquistou a crítica especializada e os ainda mais exigentes fãs
+                do gênero, sendo indicado para prêmios respeitados, como o Arthur C. Clarke Award e o Hugo Award.
+                <br>
+                Um dos motivos do sucesso de A LONGA VIAGEM A UM PEQUENO PLANETA HOSTIL é a abordagem da história.
+                Elementos essenciais em qualquer narrativa sci-fi estão muito bem representados, como a precisão científica e suas
+                possíveis implicações políticas. O gatilho principal é a construção de um túnel espacial que permitirá ao pequeno planeta
+                do título participar de uma aliança galáctica.
+                <br>
+                Mas o que realmente torna único esse romance on the road futurístico e muito divertido são seus personagens. Instigantes,
+                complexos, tridimensionais. A autora optou por contar a história de gente como a gente — ainda que nem todos sejam terráqueos,
+                ou mesmo humanos.
+                <br>
+                A tripulação da nave espacial Andarilha é composta por indivíduos de planetas, espécies e gêneros diferentes, incluindo
+                uma piloto reptiliana, uma estagiária nascida nas colônias de Marte e um médico de gênero fluido, que transita entre o
+                masculino e o feminino ao longo da vida.
+                <br>
+                Temas como amizade, racismo, poliamor, força feminina e novos conceitos de família fazem parte do universo do livro,
+                assim como cada vez mais fazem parte do nosso mundo.
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

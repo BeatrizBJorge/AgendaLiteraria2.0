@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Vilão";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/Vilao.png" alt="Vilão">
+            <h2>Vilão</h2>
+            <h3 class="h3Books">V. E. Schwab</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Victor Vale e Eli Ever são inimigos mortais desde a juventude. <br>
+                Mas o bem e o mal nem sempre é tão claro, quando humanos extraórdinários brincam com seus superpoderes. <br>
+                Quem está certo e quem está errado?
+            </h5>
+            <p class="pBooks">
+                Victor e Eli, dois jovens brilhantes, arrogantes e solitários, se conheceram na Universidade de Merit e logo se
+                deram bem, identificando um no outro a mesma sagacidade e a mesma ambição. No último ano da faculdade, o interesse em
+                comum numa pesquisa sobre adrenalina, experiências de quase morte e poderes sobrenaturais lhes oferece uma possibilidade
+                antes inimaginável: de que uma pessoa, sob as condições certas, seja capaz de desenvolver habilidades extraordinárias.
+                No entanto, quando colocam em prática essa teoria, as coisas dão muito errado.
+                <br>
+                Dez anos depois, Victor foge da prisão, determinado a encontrar seu antigo amigo - agora inimigo. Para localizá-lo,
+                ele conta com a ajuda de uma garotinha, Sydney, cuja natureza reservada esconde uma habilidade sem igual, mas extremamente
+                perigosa. Enquanto isso, há dez anos Eli tem uma única missão: erradicar todas as pessoas ExtraOrdinárias que encontra,
+                pois são todas aberrações, afrontas a Deus - exceto sua ajudante, Serena, uma mulher enigmática e persuasiva, capaz de
+                impor sua vontade a qualquer um.
+                <br>
+                Agora, armado com poderes terríveis e movido pela lembrança da traição e da perda, Victor caça seu arqui-inimigo em
+                busca de vingança e de um embate no qual sabe que um dos dois deve morrer.
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>

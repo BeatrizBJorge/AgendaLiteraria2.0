@@ -1,0 +1,61 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Psicologia Social e Pessoalidade";
+}
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/PsicologiaSocial.jpg" alt="Psicologia Social e Pessoalidade">
+            <h2>Psicologia Social e Pessoalidade</h2>
+            <h3 class="h3Books">Mary Jane P. Spink</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+            </h5>
+            <p class="pBooks">
+                Este livro apresenta onze ensaios que exercitam a analítica de nossos modos humanos de viver. 
+                Ou seja, não se trata apenas de buscar as várias maneiras de conceituar o ser humano, mas de 
+                ver nas palavras/saberes as ações/fazeres que juntos se materializam no efeito de ser pessoa.
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="link-books">
+            <p class="link-title">
+                Este livro está disponível gratuitamente na Amazon:
+                <a class="link-amazon" target="_blank"
+                   href="https://www.amazon.com.br/Psicologia-social-pessoalidade-Mary-Spink-ebook/dp/B010FZ27UK/ref=lp_6311441011_1_7?pf_rd_p=721161a6-b78b-47dc-9717-91545f5eca72&pf_rd_r=EFKSHTQ73H5ZBNQ1PA0S&sbo=QS21L9be7oZFAGyl4IXR%2Bw%3D%3D">
+                    Clique aqui!
+                </a>
+            </p>
+        </div>
+        <br />
+       
+
+    </div>
+
+
+</div>

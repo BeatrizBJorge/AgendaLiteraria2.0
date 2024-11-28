@@ -1,0 +1,66 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "Sempre foi você (A agência)";
+}
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/SempreFoiVoce.jpg" alt="sempre foi você (a agência)">
+            <h2>Sempre Foi Você (A Agência)</h2>
+            <h3 class="h3Books">Elizabeth Grey</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                O futuro de Ethan Fraser é promissor.
+            </h5>
+            <p class="pBooks">
+                Sua carreira é planejada de forma detalhada e o fato de trabalhar com Violet Archer, sua melhor 
+                amiga, todos os dias é a cereja no topo do bolo. Só tem um problema: ele pode estar apaixonado 
+                por ela. Ele disse "pode estar"? Não. Ele <em>está </em> apaixonado.
+                <br>
+                Mas ele também está namorando a Zoe, a garota mais bonita e popular do escritório. 
+                Ethan tentou fazer as coisas darem certo, mas sabe que é um péssimo namorado. 
+                Ele disse "péssimo"? Mais uma vez, <em>não.</em> Ele é horrível, desastroso, incorrigível...
+                <br>
+                Será que Ethan terá coragem de contar a Violet como realmente se sente a seu respeito? 
+                E a pergunta que ele mais teme fazer: será que Violet conseguiria vê-lo dessa maneira?
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="link-books">
+            <p class="link-title">
+                Este livro está disponível gratuitamente na Amazon:
+                <a class="link-amazon" target="_blank"
+                   href="https://www.amazon.com.br/Sempre-voc%C3%AA-ag%C3%AAncia-Elizabeth-Grey-ebook/dp/B0CKKP4MQC/ref=lp_6311441011_1_3?pf_rd_p=721161a6-b78b-47dc-9717-91545f5eca72&pf_rd_r=EFKSHTQ73H5ZBNQ1PA0S&sbo=QS21L9be7oZFAGyl4IXR%2Bw%3D%3D">
+                    Clique aqui!
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+
+</div>

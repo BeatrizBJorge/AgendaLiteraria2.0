@@ -1,0 +1,37 @@
+﻿@model UsuarioModel
+@{
+    Layout = "_LayoutUsuario";
+    ViewData["Title"] = "Login";
+}
+
+<a asp-controller="Home" asp-action="Index" class="back">&#8592;</a>
+<div class="login">
+        @* <img src="~/imagens/blue-and-pink-bookshelf.jpeg" /> *@
+
+    <form asp-controller="Usuario" asp-action="Entrar" method="post" class="loginForm">
+        @TempData["MensagemErro"]
+        
+        <fieldset class="loginFieldset">
+            <legend class="loginLegend">Login</legend>
+            <br>
+            <label class="loginLabel" for="usuario">
+                <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+                Usuário: <br>
+                <input type="text" asp-for="NomeUsuario" class="loginInput" id="usuario" required>
+            </label>
+            <br>
+            <label class="loginLabel" for="senha">
+                <span asp-validation-for="Senha" class="text-danger"></span>
+                Senha: <br>
+                <input type="password" asp-for="Senha" class="loginInput" id="senha" required>
+            </label>
+            <br>
+            <br>
+            <button class="btnlog" type="submit" name="btnlog">Entrar</button>
+            <br><br />
+            <a class="btnlog" asp-controller="Usuario" asp-action="Cadastro">Cadastre-se</a>
+            <br>
+        </fieldset>
+    </form>
+
+</div>

@@ -1,0 +1,62 @@
+﻿@{
+    Layout = "_LayoutPrincipal";
+    ViewData["Title"] = "O Sol Também é uma Estrela";
+}
+<br />
+
+<div class="central">
+
+    <div class="boxBooks">
+
+        <div class="cima">
+
+            <img src="~/imagens/OSolTambemEUmaEstrela.png" alt="O Sol Também é uma Estrela">
+            <h2>O Sol Também é uma Estrela</h2>
+            <h3 class="h3Books">Nicola Yoon</h3>
+
+        </div>
+
+        <div class="baixo">
+
+            <br><br>
+            <h4 class="h4Books">Sinopse:</h4>
+            <br>
+            <h5>
+                Poético e envolvente, cheio de esperança, dor... e toda a vibração universal do coração humano.
+            </h5>
+            <p class="pBooks">
+                <strong>Natasha:</strong>
+                Sou uma garota que acredita na ciência e nos fatos. Não acredito na sorte. Nem no destino.
+                Muito menos em sonhos que nunca se tornarão realidade. Não sou o tipo de garota que se apaixona perdidamente por um
+                garoto bonito que encontra numa rua movimentada de Nova York. Não quando minha família está a 12 horas de ser deportada
+                para a Jamaica. Apaixonar-me por ele não pode ser a minha história.
+                <br>
+                <strong>Daniel:</strong>
+                Sou um bom filho e um bom aluno. Sempre estive à altura das grandes expectativas dos meus pais. Nunca me permiti ser o poeta.
+                Nem o sonhador. Mas, quando a vi, esqueci de tudo isso. Há alguma coisa em Natasha que me faz pensar que o destino tem
+                algo extraordinário reservado para nós dois.
+                <br>
+                <strong>O Universo:</strong>
+                Cada momento de nossas vidas nos trouxe a este instante único. Há um milhão de futuros diante de nós.
+                Qual deles se tornará realidade?
+
+            </p>
+
+        </div>
+
+        <form method="post" asp-controller="Livros" asp-action="AdicionarLista">
+            <div class="btnBooks">
+                <h5>Adicionar a Lista de:</h5>
+                <div class="ldash-container">
+                    <input type="hidden" name="NomeAcao" value="@ViewBag.NomeAcao" />
+                    <button class="ldash" name="btn" value="jaLi">Já li...</button>
+                    <button class="ldash2" name="btn" value="estouLendo">Estou Lendo...</button>
+                    <button class="ldash3" name="btn" value="queroLer">Quero Ler...</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>
