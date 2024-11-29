@@ -42,3 +42,9 @@ o que estão lendo atualmente e sua lista de desejos para leituras futuras.
 https://beatrizbjorge.github.io/Agenda_Literaria/  
 
 Para acessar a primeira versão do prjeto acesse: https://github.com/Nayu-mi/Projeto_AgendaLiteraria  
+
+Assista o vídeo abaixo do projeto em funcionamento:
+
+https://github.com/user-attachments/assets/cfcb4b89-6d1a-41db-bc6b-afb950d60d3c
+
+
